@@ -1,11 +1,12 @@
-package ru.ifmo.ctddev.titova.rmi.test;
+
+// TODO: Update for the modified interfaces
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import ru.ifmo.ctddev.titova.rmi.bank.Account;
-import ru.ifmo.ctddev.titova.rmi.bank.Bank;
-import ru.ifmo.ctddev.titova.rmi.bank.BankImpl;
-import ru.ifmo.ctddev.titova.rmi.bank.Person;
+import rmi.bank.Account;
+import rmi.bank.Bank;
+import rmi.bank.BankImpl;
+import rmi.bank.Person;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -71,13 +72,13 @@ public class BankTest {
             Person remotePerson = bank.getRemotePerson(localPerson.getPassport());
             assertNotNull(remotePerson);
             assertEquals(localPerson.getFirstName(), remotePerson.getFirstName());
-            assertEquals(localPerson.getSecondName(), remotePerson.getSecondName());
+            assertEquals(localPerson.getLastName(), remotePerson.getLastName());
             assertEquals(localPerson.getPassport(), remotePerson.getPassport());
         }
     }
 
     /**
-     * Test {@link Bank#getAccountIds(String)}.
+     * Test {@link Person#getAccounts(String)}.
      *
      * @throws RemoteException if communication error occurs.
      */

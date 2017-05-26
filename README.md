@@ -1,5 +1,3 @@
-# java-hw10
----------
-Special for Nikolay)
----------
-Tests for HW 10.
+# Java Advanced HW 10
+
+Modified interfaces and tests by Sophia and Mekhrubon

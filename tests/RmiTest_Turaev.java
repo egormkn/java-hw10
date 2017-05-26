@@ -1,9 +1,9 @@
-package ru.ifmo.ctddev.titova.rmi;
+// TODO: Update for the modified interfaces
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import ru.ifmo.ctddev.titova.rmi.bank.Account;
-import ru.ifmo.ctddev.titova.rmi.bank.Person;
+import rmi.bank.Account;
+import rmi.bank.Person;
 
 import java.rmi.RemoteException;
 import java.util.*;
